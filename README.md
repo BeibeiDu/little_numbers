@@ -23,11 +23,11 @@ Open the printed localhost URL. Enter a nickname and pick an avatar; the first t
 To test a project path locally:
 
 ```sh
-BASE_PATH=/hector_maths/ npm run build
-BASE_PATH=/hector_maths/ npm run preview
+BASE_PATH=/little_numbers/ npm run build
+BASE_PATH=/little_numbers/ npm run preview
 ```
 
-Open `http://localhost:4173/hector_maths/`. All JS, CSS, icons, manifest and service-worker paths follow the configured base. Navigation is local screen state, so there are no deep-link 404s. The GitHub repository is https://github.com/BeibeiDu/hector_maths and the Pages address is https://beibeidu.github.io/hector_maths/. Pushes to `main` run the deployment workflow.
+Open `http://localhost:4173/little_numbers/`. All JS, CSS, icons, manifest and service-worker paths follow the configured base. Navigation is local screen state, so there are no deep-link 404s. The GitHub repository is https://github.com/BeibeiDu/little_numbers and the Pages address is https://beibeidu.github.io/little_numbers/. Pushes to `main` run the deployment workflow.
 
 ## Install on iPad / use offline
 
@@ -66,6 +66,6 @@ Parent Settings offers JSON export, validated restore with an explicit replaceme
 
 ## Checks and remaining limits
 
-Automated tests cover all skills at all five levels with 100 seeds each (8,000 generated questions), answer rejection, arithmetic correctness, mastery, selection fallbacks, JSON round-trips, malformed imports and fortnight dates. TypeScript and ESLint are included in the build workflow. Browser checks confirmed onboarding, numeric feedback, reload persistence, generated activities and feedback, iPad portrait and phone layouts, and production loading under `/hector_maths/`. The production app reloaded and generated questions with its preview server stopped, verifying offline caching. The dependency audit reported zero known vulnerabilities.
+Automated tests cover all skills at all five levels with 100 seeds each (8,000 generated questions), answer rejection, arithmetic correctness, mastery, selection fallbacks, JSON round-trips, malformed imports and fortnight dates. TypeScript and ESLint are included in the build workflow. Browser checks confirmed onboarding, numeric feedback, reload persistence, generated activities and feedback, iPad portrait and phone layouts, and production loading under `/little_numbers/`. The production app reloaded and generated questions with its preview server stopped, verifying offline caching. The dependency audit reported zero known vulnerabilities.
 
 This is informal practice, not a curriculum assessment. The hold gate discourages accidental entry; it is not authentication. There is one profile per browser, no syncing, no text-to-speech, and no timed challenge. Reading support from a grown-up may help. Device storage is finite; histories are currently retained rather than pruned. Actual iPad installation/offline behaviour and live GitHub Actions deployment require final checks on the target device/repository.
