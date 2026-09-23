@@ -12,6 +12,7 @@ import {
   saveState,
   validate,
 } from "./storage";
+import { DeviceGuide } from "./components/DeviceGuide";
 import { NumberBlocks } from "./components/NumberBlocks";
 import "./style.css";
 
@@ -231,7 +232,7 @@ export default function App() {
             Let’s explore <span>→</span>
           </button>
         </form>
-        <p className="small">Your name and progress stay on this device.</p>
+        <DeviceGuide expanded />
         {error && <p role="alert">{error}</p>}
       </main>
     );
@@ -414,6 +415,7 @@ export default function App() {
                 My progress <span>→</span>
               </button>
             </section>
+            <DeviceGuide />
             <p className="home-note">
               A little practice. A lot of possibility.
             </p>
